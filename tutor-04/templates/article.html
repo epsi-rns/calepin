@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% set headtitle = article.title %}
+
+{% block main %}
+  <main role="main" 
+        class="column is-two-thirds">
+
+    <section class="main-wrapper blue">
+      <div class="blog white z-depth-3 hoverable">
+
+        <section class="blog-header blue lighten-5">
+          <div class="main_title"> 
+            <h2 class="title is-4" itemprop="name headline">
+              <a href="{{ SITEURL }}/{{ article.url }}"
+                >{{ article.title }}</a></h2>
+            <p>{{ article.locale_date }},
+              by <a href="#">{{ article.author }}</a></p>
+          </div>
+        </section>
+
+        <article class="blog-body" itemprop="articleBody">
+          {{ article.content }}
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+{% endblock %}
+
+{% block aside %}
+  <aside class="column is-one-thirds">
+
+    <section class="aside-wrapper teal">
+      <div class="widget white z-depth-3 hoverable">
+
+        <div class="widget-header teal lighten-4">
+          <strong>Side Menu</strong>
+          <span class="fas fa-scroll is-pulled-right"></span>
+        </div>
+
+        <div class="widget-body">
+          This is a post kind layout.
+        </div>
+
+      </div>
+    </section>
+
+  </aside>
+{% endblock %}

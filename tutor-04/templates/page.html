@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% set headtitle = page.title %}
+
+{% block main %}
+  <main role="main" 
+        class="column is-two-thirds">
+
+    <section class="main-wrapper pink">
+      <div class="blog white z-depth-3 hoverable">
+
+        <section class="blog-header pink lighten-5">
+          <div class="main_title"> 
+            <h2 class="title is-4" itemprop="name headline">
+              {{ page.title }}</h2>
+          </div>
+        </section>
+
+        <article class="blog-body" itemprop="articleBody">
+          {{ page.content }}
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+{% endblock %}
+
+{% block aside %}
+  <aside class="column is-one-thirds">
+
+    <section class="aside-wrapper green">
+      <div class="widget white z-depth-3 hoverable">
+
+        <div class="widget-header green lighten-4">
+          <strong>Side Menu</strong>
+          <span class="fas fa-fingerprint is-pulled-right"></span>
+        </div>
+
+        <div class="widget-body">
+          This is a page kind layout.
+        </div>
+
+      </div>
+    </section>
+
+  </aside>
+{% endblock %}

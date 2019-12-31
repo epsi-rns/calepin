@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% set headtitle = "Authors | " ~ SITENAME %}
+
+{% block main %}
+  <main role="main" 
+        class="column is-two-thirds">
+
+    <section class="main-wrapper brown">
+      <div class="blog white z-depth-3 hoverable">
+
+        <section class="blog-header brown lighten-5">
+          <div class="main_title"> 
+            <h2 class="title is-4" itemprop="name headline">
+              All Authors</h2>
+          </div>
+        </section>
+
+        <article class="blog-body"
+                 itemprop="articleBody">
+          <ul>
+          {% for author, articles in authors | sort %}
+            <li>
+              <span class="fa fa-user"></span>&nbsp;
+              <a href="{{ SITEURL }}/{{ author.url }}"
+                >{{ author }}</a> ({{ articles | count }})</li>
+            </li>
+          {% endfor %}
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+{% endblock %}
+
+{% block aside %}
+  <aside class="column is-one-thirds">
+
+    <section class="aside-wrapper light-green">
+      <div class="widget white z-depth-3 hoverable">
+
+        <div class="widget-header light-green lighten-4">
+          <strong>Side Menu</strong>
+          <span class="fas fa-fingerprint is-pulled-right"></span>
+        </div>
+
+        <div class="widget-body">
+          This is an all authors kind layout.
+        </div>
+
+      </div>
+    </section>
+
+  </aside>
+{% endblock %}

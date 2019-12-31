@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block main %}
+  <main role="main" 
+        class="column is-full">
+
+    <section class="main-wrapper indigo">
+      <div class="blog white z-depth-3 hoverable">
+
+        <section class="blog-header indigo lighten-5">
+          <div class="main_title"> 
+          {% block content_title %}
+            <h2 class="title is-4" itemprop="name headline">
+              {{ headtitle }}</h4>
+          {% endblock %} 
+          </div>
+        </section>
+
+        <article class="blog-body"
+                 itemprop="articleBody">
+          <ul>
+          {% for article in articles_page.object_list %}
+            <li>
+              <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" 
+                 title="Permalink to {{ article.title|striptags }}">
+                {{ article.title }}
+              </a>
+            </li>
+          {% endfor %}
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+{% endblock %}
+
