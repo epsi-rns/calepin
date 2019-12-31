@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible"
+        content="IE=edge,chrome=1">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Archives | 2019</title>
+
+  <link rel="stylesheet" type="text/css"
+        href="/theme/css/bulma.css">
+  <link rel="stylesheet" type="text/css"
+        href="/theme/css/helper.css">
+  <link rel="stylesheet" type="text/css"
+        href="/theme/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css"
+        href="/theme/css/main.css">
+
+  <link rel="shortcut icon" type="image/vnd.microsoft.icon"
+        href="/theme/favicon.ico"/></head>
+
+<body>
+  <!-- header -->
+
+  <nav role="navigation" aria-label="main navigation"
+       class="navbar is-fixed-top is-white maxwidth
+              white z-depth-3 hoverable"
+       id="navbar-vue-app">
+    <div class="navbar-brand">
+      <a class="navbar-item"
+         href="/">
+        <img src="/theme/images/logo-gear.png" 
+           alt="Home" />
+      </a>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Archives
+        </a>
+
+        <div class="navbar-dropdown">
+          <a class="navbar-item"
+             href="/tags">
+            <span class="fa fa-tags"></span>
+            &nbsp;By Tags
+          </a>
+          <a class="navbar-item"
+             href="/categories">
+            <span class="fa fa-folder"></span>
+            &nbsp;By Category
+          </a>
+          <hr class="navbar-divider">
+          <a class="navbar-item"
+             href="/archives">
+            <span class="fa fa-calendar"></span>
+            &nbsp;Chronology
+          </a>
+        </div>
+      </div>
+
+      <a role="button" class="navbar-burger burger" 
+         aria-label="menu" aria-expanded="false" data-target="navbarBulma"
+         @click="isOpen = !isOpen" v-bind:class="{'is-active': isOpen}">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBulma" class="navbar-menu"
+         v-bind:class="{'is-active': isOpen}">
+      <div class="navbar-start">
+        <a class="navbar-item"
+           href="/pages/about">
+          About
+        </a>
+      </div>
+
+      <div class="navbar-end">
+        <form class="is-marginless" action="/pages/search/" method="get">
+        <div class="navbar-item">
+          <input class="" type="text" name="q"
+            placeholder="Search..." aria-label="Search">
+          &nbsp;
+          <button class="button is-light" 
+            type="submit">Search</button>
+        </div>
+        </form>
+      </div>
+
+    </div>
+  </nav>
+  <!-- main -->
+  <div class="columns is-8 layout-base maxwidth">
+  <main role="main" 
+        class="column is-two-thirds">
+
+    <section class="main-wrapper cyan">
+      <div class="blog white z-depth-3 hoverable">
+
+        <section class="blog-header cyan lighten-5">
+          <div class="main_title"> 
+            <h2 class="title is-4" itemprop="name headline">
+              Archives for 2019</h2>
+          </div>
+        </section>
+
+        <article class="blog-body"
+                 itemprop="articleBody">
+  <ul>
+    <li>
+      January
+      <ul>
+        <li>
+          <span class="fa fa-calendar"></span>&nbsp;
+          15:&nbsp;
+          <a href="/2019/01/15/joni-mitchell-both-sides-now/" rel="bookmark" 
+             title="Permalink to Both Sides Now"
+            >Both Sides Now</a>
+        </li>
+       </ul>
+       <br/>
+     </li>
+  </ul>        </article>
+
+      </div>
+    </section>
+
+  </main>
+    
+  <aside class="column is-one-thirds">
+
+    <section class="aside-wrapper purple">
+      <div class="widget white z-depth-3 hoverable">
+
+        <div class="widget-header purple lighten-4">
+          <strong>Side Menu</strong>
+          <span class="fas fa-fingerprint is-pulled-right"></span>
+        </div>
+
+        <div class="widget-body">
+          This is a period archives kind layout.
+          Archive by year or by month.
+        </div>
+
+      </div>
+    </section>
+
+  </aside>
+  </div><!-- columns -->
+
+  <!-- footer -->
+  <footer class="site-footer">
+    <div class="navbar is-fixed-bottom maxwidth
+          is-white has-text-centered is-vcentered
+          white z-depth-3 hoverable">
+      <div class="column">
+        &copy; 2020
+      </div>
+    </div>
+  </footer>
+  <!-- JavaScript at end of body for optimized loading -->
+  <script src="/theme/js/vue.min.js"></script>
+  <script src="/theme/js/bulma-burger-vue.js"></script></body>
+
+</html>
