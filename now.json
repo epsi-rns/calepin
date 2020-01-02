@@ -1,8 +1,5 @@
 {
   "name": "pelican-steps",
   "alias": "pelican-steps",
-  "type": "static",
-  "files": [
-    "step-07/output"
-  ]
+  "type": "static"
 }
