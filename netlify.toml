@@ -1,4 +1,4 @@
 [build]
   base    = "step-07"
   publish = "step-07/output"
-  command = "make content"
+  command = "make content -s publishconf.py"
