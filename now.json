@@ -1,6 +1,11 @@
 {
   "name": "pelican-steps",
   "alias": "pelican-steps",
+  "github": {
+    "autoAlias": false
+  },
   "type": "static",
-  "root": "./step-07"
+  "files": [
+    "step-07/output"
+  ]
 }
