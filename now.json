@@ -7,11 +7,5 @@
   "type": "static",
   "files": [
     "step-07/output"
-  ],
-  "builds": [
-    { "src": "./step-07/output/**", "use": "@now/static" }
-  ],
-  "routes": [
-    { "src": "/(.*)", "dest": "step-07/output/$1" }
   ]
 }
