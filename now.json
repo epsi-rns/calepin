@@ -1,0 +1,6 @@
+{
+  "name": "pelican-steps",
+  "alias": "pelican-steps",
+  "type": "static",
+  "root": "./step-07"
+}
