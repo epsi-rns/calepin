@@ -81,7 +81,7 @@ sys.path.append(path_plugins)
 
 # -- Plugins --
 
-# from jinja2content import jinja2content
+from jinja2content import jinja2content
 
 PLUGINS = [
     # ...
