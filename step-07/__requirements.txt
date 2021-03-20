@@ -23,7 +23,7 @@ imagesize==1.1.0
 iotop==0.6
 ipaddress==1.0.22
 java-config==2.2.0
-Jinja2==2.10.1
+Jinja2==2.11.3
 layman==2.4.2
 linecache2==1.0.0
 louis==3.10.0
