@@ -27,7 +27,7 @@ Jinja2==2.10.1
 layman==2.4.2
 linecache2==1.0.0
 louis==3.10.0
-lxml==4.3.3
+lxml==4.6.5
 M2Crypto==0.31.0
 Mako==1.0.7
 Markdown==3.1.1
