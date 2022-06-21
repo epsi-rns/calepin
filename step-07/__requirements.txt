@@ -37,7 +37,7 @@ mimeparse==1.6.0
 mirrorselect==2.2.4.post1
 ndg-httpsclient==0.4.0
 notify2==0.3
-numpy==1.14.5
+numpy==1.22.0
 olefile==0.46
 packaging==19.2
 pbr==4.2.0
